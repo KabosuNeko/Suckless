@@ -1,7 +1,8 @@
 # ⛺ Cozy Suckless
 
 <div align="center">
-  <img src="./wallpapers/preview.png" width="100%" alt="Preview Screenshot" />
+<img width="1920" height="1080" alt="2026-01-29_01-08" src="https://github.com/user-attachments/assets/3ee22168-3f2a-4653-9b7a-d8016b29078c" />
+
 
   <br />
   
