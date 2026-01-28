@@ -86,7 +86,6 @@ startx
 
 ## ☕ Credits
 * **Suckless Team:** For creating the amazing [dwm](https://dwm.suckless.org/) & [slstatus](https://tools.suckless.org/slstatus/).
-* **Arch Wiki:** For the endless [documentation](https://wiki.archlinux.org/).
 
 ---
 <div align="center">
