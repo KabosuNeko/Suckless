@@ -41,7 +41,7 @@ Make sure you have the required packages installed (Arch Linux):
 sudo pacman -S git base-devel libx11 libxft libxinerama webkit2gtk
 
 # Tools & Apps
-sudo pacman -S kitty fish rofi picom dunst fastfetch flameshot
+sudo pacman -S kitty fish rofi picom dunst fastfetch flameshot feh
 
 # AUR Packages
 yay -S python-pywal16 cava materia-transparent-gtk-theme-git
