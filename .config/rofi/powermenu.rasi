@@ -1,0 +1,112 @@
+@theme "~/.config/rofi/colors-rofi.rasi"
+
+/*****----- Global Properties -----*****/
+* {
+    /* Copy các biến màu từ file gốc để đồng bộ */
+    background-alt: @color7;
+    selected:       @color12;
+    active:         @color11;
+    urgent:         red;
+    text-color:     @foreground;
+    
+    /* Màu nền trong suốt có tint đen như file gốc */
+    background-color: transparent;
+}
+
+/*****----- Main Window -----*****/
+window {
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false; /* Power menu thì không nên fullscreen */
+    
+    /* Kích thước vừa vặn cho 4 nút */
+    width:                       800px; 
+    height:                      250px;
+    
+    x-offset:                    0px;
+    y-offset:                    0px;
+    
+    /* Viền và bo góc giống phong cách gốc */
+    border:                      0px solid;
+    border-radius:               20px;
+    background-color:            black / 60%; /* Đậm hơn chút để nổi trên hình nền */
+    cursor:                      "default";
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                     true;
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     40px; /* Căn chỉnh lại padding cho cân */
+    border:                      0px solid;
+    border-radius:               0px;
+    background-color:            transparent;
+    /* Chỉ hiện danh sách, bỏ thanh tìm kiếm (Inputbar) */
+    children:                    [ "listview" ];
+}
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                     true;
+    columns:                     4; /* 4 Cột tương ứng 4 nút (Suspend, Shutdown...) */
+    lines:                       1; /* 1 Dòng duy nhất */
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    
+    spacing:                     30px; /* Khoảng cách giữa các nút */
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    cursor:                      "default";
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                     true;
+    spacing:                     15px;
+    margin:                      0px;
+    padding:                     20px 10px;
+    border:                      0px solid;
+    border-radius:               20px; /* Bo tròn giống file gốc */
+    background-color:            transparent;
+    text-color:                  @foreground;
+    
+    /* QUAN TRỌNG: Icon nằm trên, Chữ nằm dưới */
+    orientation:                 vertical;
+    cursor:                      pointer;
+}
+
+element normal.normal {
+    background-color:            transparent;
+    text-color:                  @foreground;
+}
+
+element selected.normal {
+    /* Hiệu ứng chọn: Nền trắng mờ 20% giống file gốc */
+    background-color:            white / 20%; 
+    text-color:                  @foreground;
+}
+
+element-icon {
+    background-color:            transparent;
+    text-color:                  inherit;
+    size:                        64px; /* Kích thước Icon to rõ */
+    cursor:                      inherit;
+    horizontal-align:            0.5;
+}
+
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    highlight:                   inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5; /* Chữ căn giữa */
+}

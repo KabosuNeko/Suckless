@@ -1,0 +1,55 @@
+[global]
+    monitor = 0
+    follow = mouse
+    width = 300
+    height = 150
+    origin = top-right
+    offset = 20x20
+    scale = 0
+    font = AdwaitaMono Nerd Font 10
+    frame_color = "#3B4252"          # Nord polar night darker
+    separator_color = frame
+    padding = 12
+    horizontal_padding = 16
+    transparency = 0
+    corner_radius = 0
+    frame_width = 1
+    separator_height = 2
+    markup = full
+    format = "<b>%s</b>\n%b"
+    alignment = left
+    vertical_alignment = center
+    show_age_threshold = 60
+    word_wrap = yes
+    ignore_newline = no
+    indicate_hidden = yes
+    hide_duplicate_count = true
+    sticky_history = yes
+    history_length = 20
+    browser = brave-browser-stable 
+    icon_position = left 
+    startup_notification = false
+
+[urgency_low]
+    timeout = 3
+    background = "#2E3440"           # Nord dark background
+    foreground = "#D8DEE9"           # Nord light snow storm
+    frame_color = "#81a1c1"          # Nord polar night darker
+[urgency_normal]
+    timeout = 5
+    background = "#3B4252"           # Nord polar night darker
+    foreground = "#D8DEE9"           # Nord light snow storm
+    frame_color = "#81a1c1"          # Nord frost
+
+[urgency_critical]
+    timeout = 0
+    background = "#BF616A"           # Nord red (unchanged for critical)
+    foreground = "#ECEFF4"           # Nord snow storm lightest
+    frame_color = "#BF616A"          # Nord red
+
+    [rule]
+appname = brave-browser-stable 
+urgency = normal
+timeout = 6
+
+
