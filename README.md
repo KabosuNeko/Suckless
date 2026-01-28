@@ -20,6 +20,7 @@ Welcome to my personal dwm rice. This setup is built around **dwm** (dynamic win
 | --------- | ---- | ----------- |
 | **WM** | [`dwm`](https://dwm.suckless.org/) | Patched with essential features |
 | **Bar** | [`slstatus`](https://tools.suckless.org/slstatus/) | Minimalist status monitor |
+| **Wallpaper** | [`feh`](https://github.com/derf/feh) | Minimal wallpaper manager |
 | **Terminal** | [`kitty`](https://sw.kovidgoyal.net/kitty/) | GPU accelerated, highly configurable |
 | **Shell** | [`fish`](https://fishshell.com/) | User-friendly interactive shell |
 | **Launcher** | [`rofi`](https://github.com/davatorium/rofi) | Application launcher & window switcher |
