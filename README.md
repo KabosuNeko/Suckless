@@ -43,7 +43,7 @@ sudo pacman -S git base-devel libx11 libxft libxinerama webkit2gtk
 sudo pacman -S kitty fish rofi picom dunst fastfetch flameshot
 
 # AUR Packages
-yay -S python-pywal16 cava-git
+yay -S python-pywal16 cava materia-transparent-gtk-theme-git
 
 # Clone repo
 git clone https://github.com/KabosuNeko/Suckless
