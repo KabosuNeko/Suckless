@@ -26,7 +26,7 @@ Welcome to my personal dwm rice. This setup is built around **dwm** (dynamic win
 | **Launcher** | [`rofi`](https://github.com/davatorium/rofi) | Application launcher & window switcher |
 | **Compositor** | [`picom`](https://github.com/yshui/picom) | For transparency, shadows, and blur |
 | **Notifications** | [`dunst`](https://dunst-project.org/) | Minimalist notification daemon |
-| **Colors** | [`pywal`](https://github.com/dylanaraps/pywal) (wal) | Auto-generate colors from wallpaper |
+| **Colors** | [`pywal16`](https://github.com/eylles/pywal16) | Auto-generate colors from wallpaper |
 | **Visualizer** | [`cava`](https://github.com/karlstav/cava) | Audio visualizer for the terminal |
 | **Fetch** | [`fastfetch`](https://github.com/fastfetch-cli/fastfetch) | System information tool |
 | **Screenshot** | [`flameshot`](https://flameshot.org/) | Powerful screenshot tool |
