@@ -8,7 +8,6 @@ https://github.com/user-attachments/assets/80307e3e-6ce4-428c-a81c-1fdbb59c1458
 
   <br />
   
-  ![Arch Linux](https://img.shields.io/badge/Arch%20Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
   ![Suckless](https://img.shields.io/badge/Suckless-111111?style=for-the-badge&logo=c&logoColor=white)
 
 </div>
