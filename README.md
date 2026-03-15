@@ -38,13 +38,13 @@ Make sure you have the required packages installed (Arch Linux):
 
 ```bash
 # Core components
-sudo pacman -S git base-devel libx11 libxft libxinerama webkit2gtk
+sudo pacman -S git base-devel libx11 libxft libxinerama webkit2gtk xorg-server xorg-xinit
 
 # Tools & Apps
-sudo pacman -S kitty fish rofi picom dunst fastfetch flameshot feh
+sudo pacman -S kitty fish rofi rofi-greenclip picom dunst fastfetch flameshot feh xclip polkit-gnome gnome-keyring libsecret brightnessctl pipewire wireplumber pipewire-pulse
 
 # AUR Packages
-yay -S python-pywal16 cava materia-transparent-gtk-theme-git
+yay -S python-pywal16 cava catppuccin-gtk-theme-mocha
 
 # Clone repo
 git clone https://github.com/KabosuNeko/Suckless
