@@ -41,7 +41,7 @@ Make sure you have the required packages installed (Arch Linux):
 sudo pacman -S git base-devel libx11 libxft libxinerama webkit2gtk xorg-server xorg-xinit
 
 # Tools & Apps
-sudo pacman -S kitty fish rofi rofi-greenclip picom dunst fastfetch flameshot feh xclip polkit-gnome gnome-keyring libsecret brightnessctl pipewire wireplumber pipewire-pulse lxappearance
+sudo pacman -S kitty fish rofi rofi-greenclip picom dunst fastfetch flameshot feh xclip polkit-gnome gnome-keyring libsecret brightnessctl pipewire wireplumber pipewire-pulse lxappearance redshift
 
 # AUR Packages
 yay -S python-pywal16 colorz cava catppuccin-gtk-theme-mocha
