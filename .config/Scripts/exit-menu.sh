@@ -4,8 +4,7 @@
 
 OPTIONS=" Lock\n󰒲 Suspend\n Reboot\n⏻ PowerOff\n󰍃 LogOut"
 
-SELECTED=$(echo -e "$OPTIONS" | rofi -dmenu -i -p "Power Menu:" -theme ~/.config/rofi/powermenu.rasi)
-
+SELECTED=$(echo -e "$OPTIONS" | rofi -dmenu -i -p "Power Menu:")
 # Extract only the action word
 ACTION=$(echo "$SELECTED" | awk '{print $2}')
 

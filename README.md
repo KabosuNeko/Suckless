@@ -44,7 +44,7 @@ sudo pacman -S git base-devel libx11 libxft libxinerama webkit2gtk xorg-server x
 sudo pacman -S kitty fish rofi rofi-greenclip picom dunst fastfetch flameshot feh xclip polkit-gnome gnome-keyring libsecret brightnessctl pipewire wireplumber pipewire-pulse lxappearance redshift
 
 # AUR Packages
-yay -S python-pywal16 colorz cava catppuccin-gtk-theme-mocha
+yay -S python-pywal16 colorz cava bibata-cursor-theme tela-icon-theme-git gruvbox-material-gtk-theme-git
 
 # Clone repo
 git clone https://github.com/KabosuNeko/Suckless
