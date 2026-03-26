@@ -149,12 +149,12 @@ static const Key keys[] = {
 	{ MODKEY|Mod1Mask|ShiftMask,    XK_0,      defaultgaps,    {0} },
 	/* Killing the focused window and whatever view is */	
 	{ MODKEY,                       XK_Tab,    view,           {0} },
-	{ MODKEY,             		XK_q,      killclient,     {0} },	
+	{ MODKEY,             			XK_q,      killclient,     {0} },	
 	/* layouts */
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} }, // Tiled
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[1]} }, // Monocle
 	{ MODKEY,                       XK_s,      setlayout,      {.v = &layouts[2]} }, // Spiral
-	{ MODKEY,                       XK_d,      setlayout,      {.v = &layouts[3]} }, // Dwindle
+	{ MODKEY|ShiftMask,             XK_d,      setlayout,      {.v = &layouts[3]} }, // Dwindle
 	{ MODKEY,                       XK_c,      setlayout,      {.v = &layouts[7]} }, // grid 
 	{ MODKEY,                       XK_n,      setlayout,      {.v = &layouts[8]} }, // nrowgrid
 	{ MODKEY,                       XK_v,      setlayout,      {.v = &layouts[9]} }, // horizgrid
