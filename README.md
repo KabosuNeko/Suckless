@@ -42,6 +42,7 @@ sudo make clean install
 cd ../slstatus
 sudo make clean install
 
+# Build st
 cd ../st
 sudo make clean install
 ```
