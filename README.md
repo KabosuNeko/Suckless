@@ -41,6 +41,9 @@ sudo make clean install
 # Build slstatus
 cd ../slstatus
 sudo make clean install
+
+cd ../st
+sudo make clean install
 ```
 
 ## 🎹 Keybindings (Highlights)

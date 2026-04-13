@@ -81,7 +81,7 @@ static const char *wallpaper[] = {
     NULL 
 };
 //static const char *wallpaper[] = { "rofi", "-show", "wallpaper", "-modi", "'wallpaper:~/.config/rofi/wallpaper.sh'", NULL };
-static const char *termcmd[]  = { "kitty", NULL };
+static const char *termcmd[]  = { "st", NULL };
 static const char *thunarcmd[]  = { "thunar", NULL };
 static const char *zencmd[] = { "zen-browser", NULL };
 static const char *flameshot[] = { "flameshot", "gui", NULL };
