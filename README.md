@@ -8,7 +8,8 @@ https://github.com/user-attachments/assets/80307e3e-6ce4-428c-a81c-1fdbb59c1458
 
   <br />
   
-  ![Suckless](https://img.shields.io/badge/Suckless-111111?style=for-the-badge&logo=c&logoColor=white)
+<img width="1920" height="1080" alt="2026-04-11___14-29" src="https://github.com/user-attachments/assets/edf15108-693e-4a01-8c91-08c44449e0c7" />
+
 
 </div>
 
