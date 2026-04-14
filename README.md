@@ -46,7 +46,7 @@ sudo make clean install
 ## 🎹 Keybindings (Highlights)
 | Key Combination | Action |
 | --------------- | ------ |
-| `Super + Enter` | Open Terminal (Kitty) |
+| `Super + Enter` | Open Terminal (ST) |
 | `Super + D` | Open Launcher (Rofi) |
 | `Super + Q` | Close Window |
 | `Super + Shift + Q` | Quit dwm |
