@@ -130,7 +130,8 @@ static const Key keys[] = {
     { MODKEY, XK_y, spawn, SHCMD("~/.config/Scripts/rofi-ytm.sh") },  
 
 	/* My binds for spawning apps */	
-	{ MODKEY|ShiftMask,             XK_s,      spawn,          {.v = flameshot } },
+	{ MODKEY,		                XK_s,      spawn,          {.v = flameshot } },
+
 	{ MODKEY,                       XK_d,      spawn,          {.v = roficmd } },
 	{ MODKEY,                       XK_f,      spawn,          {.v = zencmd } },
 	{ MODKEY,             		    XK_Return, spawn,          {.v = termcmd } },
@@ -174,7 +175,7 @@ static const Key keys[] = {
 	/* layouts */
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} }, // Tiled
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[1]} }, // Monocle
-	{ MODKEY,                       XK_s,      setlayout,      {.v = &layouts[2]} }, // Spiral
+	{ MODKEY|ShiftMask,             XK_s,      setlayout,      {.v = &layouts[2]} }, // Spiral
 	{ MODKEY|ShiftMask,             XK_d,      setlayout,      {.v = &layouts[3]} }, // Dwindle
 	{ MODKEY,                       XK_c,      setlayout,      {.v = &layouts[7]} }, // grid 
 	{ MODKEY,                       XK_n,      setlayout,      {.v = &layouts[8]} }, // nrowgrid
