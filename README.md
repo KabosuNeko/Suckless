@@ -1,12 +1,16 @@
 # ⛺ Cozy Suckless
 
-<div align="center">
 
-<img width="1920" height="1080" alt="2026-04-11___14-29" src="https://github.com/user-attachments/assets/edf15108-693e-4a01-8c91-08c44449e0c7" />
-<img width="1920" height="1080" alt="2026-04-14___13-39" src="https://github.com/user-attachments/assets/2d504d27-03f1-418b-a41b-2b6f0aee1fa8" />
-
-
-  <br />
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/611f7068-bb3c-48b7-b8d1-14ba69c6548b" width="100%" /></td>
+    <td><img src="https://github.com/user-attachments/assets/92df9782-f631-4021-a2fb-ad3ad1f2e9a3" width="100%" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/210b5205-0c03-415b-958d-f46993571cf4" width="100%" /></td>
+    <td><img src="https://github.com/user-attachments/assets/df73c3ba-9a2e-4bd7-8c58-ed8a77d80ff2" width="100%" /></td>
+  </tr>
+</table>
   
 </div>
 
