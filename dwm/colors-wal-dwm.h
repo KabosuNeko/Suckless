@@ -1,1 +1,0 @@
-/home/mibanh/.cache/wal/colors-wal-dwm.h

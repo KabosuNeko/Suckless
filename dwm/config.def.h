@@ -1,5 +1,4 @@
 #include <X11/XF86keysym.h>
-#include "colors-wal-dwm.h"
 static const unsigned int borderpx = 1;
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int gappih    = 10;       /* horiz inner gap between windows */
@@ -11,11 +10,43 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Maple Mono NF:size=12" };
 static const char dmenufont[]       = "AdwaitaMono Nerd Font:size=12";
-static const char col_gray1[]       = "#2e3440";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#d8dee9";
-static const char col_cyan[]        = "#81a1c1";
+
+static char normbgcolor[] = "#222222";
+static char normbordercolor[] = "#444444";
+static char normfgcolor[] = "#bbbbbb";
+static char selfgcolor[] = "#eeeeee";
+static char selbordercolor[] = "#005577";
+static char selbgcolor[] = "#005577";
+
+static char *colors[][3] = {
+	/*               fg            bg            border   */
+	[SchemeNorm] = { normfgcolor,  normbgcolor,  normbordercolor },
+	[SchemeSel]  = { selfgcolor,   selbgcolor,   selbordercolor  },
+};
+
+static char termcol0[]  = "#000000";
+static char termcol1[]  = "#ff0000";
+static char termcol2[]  = "#33ff00";
+static char termcol3[]  = "#ff0099";
+static char termcol4[]  = "#0066ff";
+static char termcol5[]  = "#cc00ff";
+static char termcol6[]  = "#00ffff";
+static char termcol7[]  = "#d0d0d0";
+static char termcol8[]  = "#808080";
+static char termcol9[]  = "#ff0000";
+static char termcol10[] = "#33ff00";
+static char termcol11[] = "#ff0099";
+static char termcol12[] = "#0066ff";
+static char termcol13[] = "#cc00ff";
+static char termcol14[] = "#00ffff";
+static char termcol15[] = "#ffffff";
+
+static char *termcolor[] = {
+	termcol0, termcol1, termcol2, termcol3,
+	termcol4, termcol5, termcol6, termcol7,
+	termcol8, termcol9, termcol10, termcol11,
+	termcol12, termcol13, termcol14, termcol15,
+};
 
 /* tagging */
 //static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
@@ -71,16 +102,6 @@ static const Layout layouts[] = {
 
 /* commands */
 static const char *roficmd[] = { "rofi", "-show", "drun", NULL }; 
-static const char *wallpaper[] = { 
-    "rofi", 
-    "-show", "wallpaper", 
-    "-modi", "wallpaper:~/.config/Scripts/wallpaper.sh", 
-    "-show-icons",
-    "-theme-str",
-    "element-icon { size: 10ch; } listview { lines: 3; columns: 4; } window { width: 50%; }", 
-    NULL 
-};
-//static const char *wallpaper[] = { "rofi", "-show", "wallpaper", "-modi", "'wallpaper:~/.config/rofi/wallpaper.sh'", NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *thunarcmd[]  = { "thunar", NULL };
 static const char *zencmd[] = { "zen-browser", NULL };
@@ -92,7 +113,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,           XK_j,      pushdown,       {0} },
 	{ MODKEY|ShiftMask,           XK_k,      pushup,         {0} },
 	/* Wallpaper switcher */
-	{ Mod1Mask,                       XK_w,      spawn,          {.v = wallpaper } },
+	{ Mod1Mask,                       XK_w,      spawn,          SHCMD("$HOME/.config/Scripts/wallpaper.sh") },
     /* Audio Keys */
     { 0,XF86XK_AudioMute, spawn, SHCMD("~/.config/Scripts/osd-control.sh vol_mute") },
     { 0,XF86XK_AudioLowerVolume, spawn, SHCMD("~/.config/Scripts/osd-control.sh vol_down") },
@@ -181,6 +202,8 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	/* Killing dwm */	
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	/* Reload X resources */
+	{ MODKEY, 						XK_F5, xrdb, {0} },
 };
 
 /* button definitions */

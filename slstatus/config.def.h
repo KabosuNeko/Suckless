@@ -67,11 +67,11 @@ static const char unknown_str[] = "?";
 static const struct arg args[] = {
     // uses https://dwm.suckless.org/patches/status2d patch ^c#[HEX]^ to set color and ^d^ to reset color
 
-    /* function       format                          argument */
-	  { cpu_perc,		    " ^c#bf616a^ %s%%^d^ ",        NULL },
-	  { ram_used,       "^c#a3be8c^󰫗 %s^d^ ",		      NULL },
-    { keymap,		      "^c#b48ead^ %s^d^ ",		        NULL },
-   { battery_perc,  "^c#ebcb8b^ %s%%^d^",      "BAT1" },
-           { battery_state, "^c#ebcb8b^%s^d^ ",         "BAT1" },
-    { datetime,       "^c#D8DEE9^󰸗 %s^d^",            "%d - %I:%M %p" },
+/* function       format                          argument */
+{ cpu_perc,      " ^C9^ %s%%^d^ ",              NULL },
+{ ram_used,      "^C10^󰫗 %s^d^ ",                NULL },
+{ keymap,        "^C13^ %s^d^ ",                NULL },
+{ battery_perc,  "^C11^ %s%%^d^",               "BAT1" },
+{ battery_state, "^C11^%s^d^ ",                  "BAT1" },
+{ datetime,      "^C15^󰸗 %s^d^",                 "%d - %I:%M %p" },
 };
