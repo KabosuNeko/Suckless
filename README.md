@@ -19,12 +19,13 @@ Welcome to my personal dwm rice. This setup is built around **dwm** (dynamic win
 
 ## 🚀 Installation & Setup
 
-### 1. Dependencies
+### 1. Dependencies060607
+
 Make sure you have the required packages installed (Arch Linux):
 
 ```bash
 # Core components
-sudo pacman -S git base-devel libx11 libxft libxinerama webkit2gtk xorg-server xorg-xinit
+sudo pacman -S git base-devel libx11 libxft libxinerama webkit2gtk xorg-server xorg-xinit xautolock xdotool
 
 # Clone repo
 git clone https://github.com/KabosuNeko/Suckless
