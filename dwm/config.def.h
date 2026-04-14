@@ -109,7 +109,7 @@ static const Key keys[] = {
     { MODKEY, XK_y, spawn, SHCMD("~/.config/Scripts/rofi-ytm.sh") },  
 
 	/* My binds for spawning apps */	
-	{ MODKEY,                       XK_s,      spawn,          {.v = flameshot } },
+	{ MODKEY|ShiftMask,             XK_s,      spawn,          {.v = flameshot } },
 	{ MODKEY,                       XK_d,      spawn,          {.v = roficmd } },
 	{ MODKEY,                       XK_f,      spawn,          {.v = zencmd } },
 	{ MODKEY,             		    XK_Return, spawn,          {.v = termcmd } },
