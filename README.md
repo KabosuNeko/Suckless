@@ -19,7 +19,7 @@ Welcome to my personal dwm rice. This setup is built around **dwm** (dynamic win
 
 ## 🚀 Installation & Setup
 
-### 1. Dependencies060607
+### 1. Dependencies
 
 Make sure you have the required packages installed (Arch Linux):
 
