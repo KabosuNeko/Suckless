@@ -127,17 +127,22 @@ static const Key keys[] = {
 
     { MODKEY|ShiftMask, XK_v, spawn, {.v = clipcmd } },
 
-    { MODKEY, XK_y, spawn, SHCMD("~/.config/Scripts/rofi-ytm.sh") },  
+    { MODKEY, XK_y, spawn, SHCMD("~/.config/Scripts/rofi-ytm.sh") },
+
+    /* Rofi Scripts */	
+    { MODKEY, XK_r, spawn, SHCMD("~/.config/Scripts/repos-rofi.sh") },
+	{ MODKEY, XK_o, spawn, SHCMD("~/.config/Scripts/tmux-rofi.sh") },
+	{ MODKEY, XK_b, spawn, SHCMD("~/.config/Scripts/bookmarks-rofi.sh") },
 
 	/* My binds for spawning apps */	
 	{ MODKEY,		                XK_s,      spawn,          {.v = flameshot } },
 
-	{ MODKEY,                       XK_d,      spawn,          {.v = roficmd } },
+	{ MODKEY,                       XK_w,      spawn,          {.v = roficmd } },
 	{ MODKEY,                       XK_f,      spawn,          {.v = zencmd } },
 	{ MODKEY,             		    XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_e,      spawn,          {.v = thunarcmd } },
 	/* toggling the dwm bar */	
-	{ MODKEY,                       XK_b,      togglebar,      {0} },
+	{ MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
 	/* moving between windows */	
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
