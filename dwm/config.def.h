@@ -137,8 +137,9 @@ static const Key keys[] = {
 	/* My binds for spawning apps */	
 	{ MODKEY,		                XK_s,      spawn,          {.v = flameshot } },
 
-	{ MODKEY,                       XK_w,      spawn,          {.v = roficmd } },
-	{ MODKEY,                       XK_f,      spawn,          {.v = zencmd } },
+	{ MODKEY,                       XK_d,      spawn,          {.v = roficmd } },
+	{ MODKEY,                       XK_f,      spawn,          SHCMD("st -e yazi") },
+	{ MODKEY,                       XK_w,      spawn,          {.v = zencmd } },
 	{ MODKEY,             		    XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_e,      spawn,          {.v = thunarcmd } },
 	/* toggling the dwm bar */	
