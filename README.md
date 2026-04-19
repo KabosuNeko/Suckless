@@ -5,22 +5,29 @@ My personal suckless builds. This setup is built around **dwm** (dynamic window 
 
 ## 🚀 Installation & Setup
 
-### 1. Dependencies
+### 1. Install XLibre
 
-Make sure you have the required packages installed (Arch Linux):
+Quick install using the official XLibre script:
+
+```bash
+sh -c "$(curl -fsSL https://x11libre.net/repo/arch_based/x86_64/install-xlibre.sh)"
+```
+
+### 2. Dependencies
+
+Make sure you have the required packages installed:
 
 ```bash
 # Core components
-sudo pacman -S git base-devel libx11 libxft libxinerama webkit2gtk xorg-server xorg-xinit xautolock xdotool
-
-# Clone repo
-git clone https://github.com/KabosuNeko/Suckless
+sudo pacman -S git base-devel libx11 libxft libxinerama webkit2gtk xorg-xinit xautolock xdotool
 ```
 
-### 2. Build Suckless Tools
-Navigate to the `dwm` and `slstatus` folders and compile them:
+### 3. Build Suckless Tools
 
 ```bash
+# Clone repo
+git clone https://github.com/KabosuNeko/Suckless
+
 cd Suckless
 
 # Build dwm
