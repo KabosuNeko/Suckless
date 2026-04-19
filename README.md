@@ -1,8 +1,6 @@
 # ⛺ Cozy Suckless
   
 </div>
-
-## 🍧 Introduction
 My personal suckless builds. This setup is built around **dwm** (dynamic window manager), focusing on minimalism, performance, and a cozy aesthetic.
 
 ## 🚀 Installation & Setup
