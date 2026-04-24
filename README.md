@@ -19,7 +19,7 @@ Make sure you have the required packages installed:
 
 ```bash
 # Core components
-sudo pacman -S git base-devel libx11 libxft libxinerama webkit2gtk xorg-xinit xautolock xdotool
+sudo pacman -S git base-devel libx11 libxft libxinerama xorg-xinit xautolock xdotool
 ```
 
 ### 3. Build Suckless Tools
